@@ -33,8 +33,10 @@
 
         <!-- Type="1", main launch boost of 2sec -->
         <Config
-            Id="0x00001081" Type="1" Enable="true" Timeout="1000" Target="lahaina"
-            Resources="0x40C00000, 0x1" />
+            Id="0x00001081" Type="1" Enable="true" Timeout="2000" Target="lahaina"
+            Resources="0x40400000, 1, 0x40C00000, 0x1, 0x40C20000, 0x28, 0x40C1C000, 0x3C,
+                       0x40C20200, 0x28, 0x40C1C200, 0x32, 0x40800000, 0x613,0x40800100,
+                       0x579, 0x40800200, 0x613, 0x43010000, 0x3B, 0x41828000, 0x8e" />
 
         <!-- SCHEDBOOST resource opcode, value-->
         <!-- CPUBOOST_MAX_FREQ BIG Core resource opcode, value-->
@@ -51,15 +53,18 @@
                       0x40800000, 1497, 0x40800100, 1516, 0x40800200, 1766" />
 
        <Config
-           Id="0x00001081" Type="1" Enable="true" Timeout="3000" Target="yupik"
-           Resources="0x40400000, 1, 0x40C00000, 0x1, 0x40C20000, 0x28, 0x40C1C000, 0x3C, 0x40C20200, 0x28, 0x40C1C200, 0x32, 0x40804000, 0xFFF, 0x40804100, 0xFFF, 0x40804200, 0xFFF, 0x40800000, 0x673, 0x40800100, 0xFFF, 0x40800200, 0x6E6, 0x43010000, 0x3B, 0x41828000, 0x8e" />
+           Id="0x00001081" Type="1" Enable="true" Timeout="2000" Target="yupik"
+           Resources="0x40C00000, 0x1, 0x40804000, 0xFFF, 0x40804100, 0xFFF, 0x40804200, 0xFFF,
+                      0x40800000, 1516, 0x40800100, 1516, 0x40800200, 1766" />
 
     <!--app lauch boost (disabling packing)-->
 
         <!-- Type="2", launch boost for disable packing 1.5sec -->
         <Config
             Id="0x00001081" Type="2" Enable="false" Timeout="1500" Target="lahaina"
-            Resources="" />
+            Resources="0x40400000, 1, 0x40C00000, 0x1, 0x40C20000, 0x28, 0x40C1C000, 0x3C,
+                       0x40C20200, 0x28, 0x40C1C200, 0x32, 0x40800000, 0x613,0x40800100,
+                       0x579, 0x40800200, 0x613, 0x43010000, 0x3B, 0x41828000, 0x8e" />
 
         <!-- POWER COLLAPSE resource opcode, value-->
         <!-- STORAGE CLK SCALING resource opcode, value-->
@@ -490,22 +495,6 @@
                        0x40C00000, 0x2, 0x43400000, 0x2AF8, 0x40C74000, 0xFF, 0x40408000, 0x63,
                        0x41000000, 3, 0x40C78000, 0, 0x40C7C000, 0, 0x40CA8000, 4,
                        0x41000200, 1, 0x40C20200, 0xA, 0x40C1C200, 0x23" />
-
-        <Config
-            Id="0x00001080" Type="4" Enable="true" Timeout="80" Target="yupik" Fps="60"
-            Resources="0x40C00000, 0x2, 0x40C20000, 0x28, 0x40C1C000, 0x3C, 0x40C20200, 0x28, 0x40C1C200, 0x32, 0x40800000, 0x5EC, 0x40800100, 0x52C, 0x40800200, 0x5EC, 0x43010000, 0x26" />
-
-        <Config
-            Id="0x00001080" Type="4" Enable="true" Timeout="80" Target="yupik" Fps="90"
-            Resources="0x40C00000, 0x2, 0x40C20000, 0x28, 0x40C1C000, 0x3C, 0x40C20200, 0x28, 0x40C1C200, 0x32, 0x40800000, 0x5EC, 0x40800100, 0x52C, 0x40800200, 0x5EC, 0x43010000, 0x26" />
-
-        <Config
-            Id="0x00001080" Type="4" Enable="true" Timeout="80" Target="yupik" Fps="120"
-            Resources="0x40C00000, 0x2, 0x40C20000, 0x28, 0x40C1C000, 0x3C, 0x40C20200, 0x28, 0x40C1C200, 0x32, 0x40800000, 0x5EC, 0x40800100, 0x52C, 0x40800200, 0x5EC, 0x43010000, 0x26" />
-
-        <Config
-            Id="0x00001080" Type="4" Enable="true" Timeout="80" Target="yupik" Fps="144"
-            Resources="0x40C00000, 0x2, 0x40C20000, 0x28, 0x40C1C000, 0x3C, 0x40C20200, 0x28, 0x40C1C200, 0x32, 0x40800000, 0x5EC, 0x40800100, 0x52C, 0x40800200, 0x5EC, 0x43010000, 0x26" />
 
         <!-- CPUBW_MIN_FREQ resource opcode, value-->
         <!-- CPUBOOST_MIN_FREQ BIG CORE resource opcode, value -->
@@ -1117,3 +1106,4 @@
 
     </PerfBoost>
 </BoostConfigs>
+
