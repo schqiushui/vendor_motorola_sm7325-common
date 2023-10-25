@@ -1056,7 +1056,6 @@ PRODUCT_PACKAGES += \
     com.qti.dpmframework \
     dpmapi \
     qcrilhook \
-    qti-telephony-common \
     vendor.qti.hardware.alarm-V1.0-java \
     vendor.qti.ims.configservice-V1.0-java \
     vendor.qti.ims.configservice-V1.1-java \
