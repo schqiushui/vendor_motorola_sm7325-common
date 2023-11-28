@@ -276,6 +276,20 @@ dex_import {
 }
 
 dex_import {
+	name: "qcom-moto-ims-ext",
+	owner: "motorola",
+	jars: ["proprietary/system_ext/framework/qcom-moto-ims-ext.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "qcom-moto-telephony-ext",
+	owner: "motorola",
+	jars: ["proprietary/system_ext/framework/qcom-moto-telephony-ext.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
 	name: "qcrilhook",
 	owner: "motorola",
 	jars: ["proprietary/system_ext/framework/qcrilhook.jar"],

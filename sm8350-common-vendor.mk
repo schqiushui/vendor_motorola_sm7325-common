@@ -1055,6 +1055,8 @@ PRODUCT_PACKAGES += \
     moto-telephony \
     com.qti.dpmframework \
     dpmapi \
+    qcom-moto-ims-ext \
+    qcom-moto-telephony-ext \
     qcrilhook \
     vendor.qti.hardware.alarm-V1.0-java \
     vendor.qti.ims.configservice-V1.0-java \
