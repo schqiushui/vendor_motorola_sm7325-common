@@ -975,11 +975,11 @@ PRODUCT_PACKAGES += \
     CneApp \
     IWlanService \
     TimeService \
-    PowerOffAlarm \
     uimgbaservice \
     IfaaService \
     SoterService \
     ImsRcsService \
+    PowerOffAlarm \
     QtiTelephony \
     QtiTelephonyService \
     WfdService \
